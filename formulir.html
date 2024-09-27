@@ -1,0 +1,27 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulir Kehadiran</title>
+  </head>
+  <body>
+    <h2>Formulir Kehadiran</h2>
+    <form action="proses_formulir.php" method="POST">
+      <label for="nama">Nama</label><br />
+      <input type="text" name="nama" id="nama" required /><br /><br />
+
+      <label for="jumlah">Jumlah orang</label><br />
+      <input type="number" name="jumlah" id="jumlah" required /><br /><br />
+
+      <label for="status">Status Kehadiran</label><br />
+      <select name="status" id="status" required>
+        <option value="kehadiran">Kehadiran</option>
+        <option value="hadir">Hadir</option>
+        <option value="tidak hadir">Tidak Hadir</option></select
+      ><br /><br />
+      <a href="/proses_formulir.php">
+        <button type="submit">Kirim</button>
+      </a>
+    </form>
+  </body>
+</html>
