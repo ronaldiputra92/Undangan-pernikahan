@@ -99,7 +99,8 @@ body {
 }
 
 .home h2,
-.rsvp h2 {
+.rsvp h2,
+.gifts h2 {
   color: var(--pink);
   font-family: "Sacramento", cursive;
   font-size: 5rem;
@@ -206,13 +207,19 @@ body {
 
 .story,
 .gallery,
-.rsvp {
+.rsvp,
+.gifts {
   padding-top: 8rem;
   padding-bottom: 8rem;
 }
 
+.rsvp {
+  background-color: #555 !important;
+}
+
 .story span,
-.gallery span {
+.gallery span,
+.gifts span {
   text-transform: uppercase;
   letter-spacing: 0.1rem;
   font-size: 0.9rem;
@@ -223,7 +230,8 @@ body {
 
 .story p,
 .gallery p,
-.rsvp {
+.rsvp p,
+.gifts p {
   font-size: 1rem;
   font-weight: 300;
 }
@@ -316,7 +324,7 @@ body {
 }
 
 .rsvp {
-  background-color: #222121;
+  background-color: #faf0f0;
 }
 
 .rsvp h2 {
@@ -345,6 +353,55 @@ body {
   background-color: white;
   color: var(--pink);
   border: 1px solid white;
+}
+
+footer {
+  background-color: var(--pink);
+  color: #fff;
+  padding: 3rem;
+}
+
+footer a {
+  color: var(--bg);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #fff;
+}
+
+footer li {
+  list-style: none;
+  display: inline;
+  margin-right: 1rem;
+}
+
+.audio-icon-wrapper {
+  width: 4rem;
+  height: 4rem;
+  font-size: 4rem;
+  position: fixed;
+  bottom: 2.5rem;
+  right: 2rem;
+  cursor: pointer;
+  color: white;
+  opacity: 0.5;
+  mix-blend-mode: difference;
+  animation: rotating 4s linear infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 0;
+}
+
+@keyframes rotating {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 /* Media Query */
